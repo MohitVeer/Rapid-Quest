@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Rapid Quest</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="assets/scss/styles.css">
+</head>
+<body style="text-align: left;">
+<aside>
+  <img src="assets/images/logo.png" alt="logoicon" class="logo">
+  <div class="tabs">
+    <a class="tab-item search" href="#"><img src="assets/images/search.png" alt="search"></a>
+    <div class="inner-tabs">
+      <a class="tab-item active" href="#"><img src="assets/images/home.png" alt=""></a>
+      <a class="tab-item" href="#"><img src="assets/images/info.png" alt=""></a>
+      <a class="tab-item" href="#"><img src="assets/images/categories.png" alt=""></a>
+      <a class="tab-item" href="#"><img src="assets/images/user.png" alt=""></a>
+    </div>
+    
+  </div>
+  <div class="footer-tab">
+    <a class="tab-item" href="#"><img src="assets/images/bell.png"  alt=""></a>
+    <a class="tab-item" href="#"><img src="assets/images/logout.png" alt=""></a>
+  </div>
+  
+</aside>
+
+
+
+<main>
+  <div class="container-fluid" id="main">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-3" id="firstcolumn">
+        <!--Header-->
+        <div class="header">
+          <table>
+            <tr>
+              <td><img src="assets/images/profile.png" alt="" class="profile"></td>
+              <td>
+                <div class="detail">
+                  <span class="name">Hi Mike,</span><br>
+                  <span class="greet">Welcome Back.</span>
+                </div>
+              </td>
+            </tr>
+          </table>
+         
+        </div>
+        <br><br>
+        <!--Data Block-->
+        <ul class="datablock">
+            
+          <li>
+              <span>Today</span>
+              <h2>$19,892</h2>
+              <small>Account Balance</small>
+            </li><br>
+          
+            <li>
+              <h4>$4,000</h4>
+              <small>Year-to-Date Contributions</small>
+            </li><br>
+          
+            <li>
+              <h4>$ 1,892</h4>
+              <small>Total Interest</small>
+            </li>
+          
+          </ul>
+          <br>
+                   
+          <button class="btn btn-md info ">I want to</button>
+
+          <br><br>
+      
+          <!-- Data Transactions -->
+
+          <ul class="datatransaction">
+            
+            <li>
+              <span>Recent Transactions</span><br><br>
+              <h4>2020-08-07</h4>
+              <small>Withdrawl Transfer to Bank-XXX11</small>
+              <hr>
+            </li>
+            
+           
+            
+            <li>
+              <h4>2020-07-21</h4>
+              <small>Withdrawl Transfer to Bank-XXX11</small>
+              <hr>
+            </li>
+            
+            
+            <li>
+              <h4>2020-07-16</h4> 
+              <small>Withdrawl Transfer to Bank-XXX11</small>
+              <hr>
+            </li>
+          
+          </ul>
+      </div>
+
+      <!-- Second Column -->
+
+      <div class="col-sm-12 col-md-12 col-lg-6" id="secondcolumn">
+        
+        <!-- product detail -->
+
+        <div class="productdetail">
+            <span class="productname">Retirement Income</span>
+            <h4 class="year">Starting Year 2056</h4>
+        </div>
+        
+       
+  
+        <!-- Mygoals -->
+
+        <table class="mygoals">
+            
+          <tr>
+          
+            <td>
+                <h3>$300,000</h3>
+                <small>My Goal</small>
+                <hr>
+              </td>
+              
+              <td>
+                <h3>59%</h3>
+                <small>Goal Achieved</small>
+                <hr>
+              </td>
+
+              <td>
+                <h3>$300</h3>
+                <small>Est. Monthly Income</small>
+                <hr>
+              </td>
+  
+            </tr>
+          
+          </table>
+          
+          <br>
+
+            <!-- Contributions -->
+
+          <table class="contributions">
+            <h4>Contributions Overtime</h4><br>
+          
+            <tr>
+              <td>
+                <span> Employer: <strong>K 73,500</strong></span>
+              </td>
+              
+              <td>
+                <span>Employer: <strong>K 52,500</strong></span>
+              </td>
+              
+              <td>
+                <span>Employer: <strong>K 244,313</strong></span>
+              </td>
+            </tr>
+          
+          </table>
+<br><br>
+
+<!-- Bar Chart -->
+        
+<div id="chartContainer" style="height: 280px; width:70%;"></div>
+        
+        
+          <br>
+
+          <!-- Compare peers -->
+
+        <div class="descrpi">
+          <h4 class="subpeer">How do I compare to my peers?</h4>
+            <span class="peers">These numbers represent current goal achievement</span>
+        </div>
+
+        <br>
+
+        <!-- User Information -->
+
+<div class="user">
+  <table>
+    <tr>
+      <td>
+           <ul class="information">
+
+          <li>
+            <label for="age">Age:</label>
+              <select id="age" name="age">
+              <option value="est-age">Under 30</option>
+              <option value="est-age">Under 50</option>
+           </select>
+          </li><br>
+          
+          <li>
+            <label for="salary">Salary:</label>
+              <select id="salary" name="salary">
+              <option value="est-salary">K 20 - K 30</option>
+              <option value="est-salary">K 30 - K 40</option>
+           </select>
+          </li><br>
+          
+          <li>
+            <label for="gender">Gender:</label>
+              <select id="gender" name="gender">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+           </select>
+          </li>
+        </ul>
+      </td>
+      
+    <td>
+
+<!-- Pie Charts -->
+
+      <div class="box">
+        <div class="chart" data-percent="78"  data-scale-color="#fff" data-line-width="8" data-bar-color="#24d5aa">78<sup>%</sup></div>
+        <span>Average</span>
+      </div>
+    </td> 
+    <td>
+      <div class="box">
+        <div class="chart" data-percent="95" data-line-width="8" data-bar-color="#24d5aa" data-scale-color="#fff">95<sup>%</sup></div>
+        <span>Top</span>
+
+      </div>
+    </td> 
+    <td>
+      <div class="box">
+        <div class="chart" data-bar-color="#24d5aa" data-line-width="8" data-scale-color="#fff"data-percent="59">59<sup>%</sup></div>
+        <span>Me</span>
+      </div>
+
+    </td> 
+    
+    </tr>
+  </table>
+       
+
+</div>
+      </div>
+
+      <!-- Third Column -->
+
+      <div class="col-sm-12 col-md-12 col-lg-3" id="thirdcolumn">
+
+        <div class="heading">
+          <h3>Retirement Strategy</h3>
+        </div>
+
+        <br><br>
+
+<!-- Range Slider -->
+
+<div class="box1">
+  <span>Employee Contribution</span> <br><br>
+
+<div class="slidecontainer">
+  <input type="range" min="1" max="50" value="12" class="slider" id="myRange">
+  <p> <span id="demo"></span>%</p>
+</div>
+
+</div>
+      
+<br>
+
+<div class="box2">
+  <span>Retirement Age</span> <br><br>
+
+<div class="slidecontainer">
+  <input type="range" min="1" max="100" value="65" class="slide" id="ourRange">
+  <p> <span id="dem"></span></p>
+</div>
+
+</div>
+
+<br>
+
+<hr>
+      
+<!-- Employee Information -->
+
+<div class="employeeinfo">
+  <table style="width: 100%;">
+
+    <tr>
+      <td>Employer Contribution</td>
+      <td>8.4%</td>
+    </tr>
+
+  </table>
+
+<br>
+
+  <table style="width: 100%;">
+
+    <tr>
+      <td>Interest Rate</td>
+      <td>5%</td>
+    </tr>
+
+  </table>
+</div>
+
+<br>
+
+<!-- update button -->
+<button class="btn btn-block update">Update</button>
+<br>
+
+<!-- Help Link -->
+
+<a href="#" class="helplink">View Help Docs ></a>
+
+<br><br><br>
+<div class="extra">
+  <span>Are you considering a <br>
+  <strong>Housing Advance?</strong></span><br>
+  <small>Limited time reduced interest.</small>
+  <br>
+<a href="#" class="help">Learn More ></a>
+
+</div>
+
+    </div>
+  </div>
+</main>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="plugins/jquery.easypiechart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+<script src="index.js"></script>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+

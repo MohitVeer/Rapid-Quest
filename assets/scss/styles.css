@@ -1,0 +1,312 @@
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+ul {
+  list-style: none;
+}
+
+h2, h4 {
+  font-weight: bold;
+}
+
+/* Aside Bar */
+aside {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  background-color: #fff;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  padding: 16px;
+}
+
+aside .logo {
+  display: block;
+  position: relative;
+  width: 52px;
+  margin: 0 auto 0;
+}
+
+aside .footer-tab,
+aside .tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+aside .footer-tab .tab-item,
+aside .tabs .tab-item {
+  height: 48px;
+  width: 48px;
+  padding: 8px;
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+aside .footer-tab .tab-item img,
+aside .tabs .tab-item img {
+  display: block;
+  width: 24px;
+  margin: auto;
+}
+
+aside .footer-tab .search,
+aside .tabs .search {
+  margin-bottom: 3rem;
+}
+
+aside .footer-tab .active,
+aside .tabs .active {
+  background-color: #2216a1;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 4px 8px rgba(17, 17, 17, 0.5);
+          box-shadow: 0 4px 8px rgba(17, 17, 17, 0.5);
+}
+
+aside .footer-tab .active img,
+aside .tabs .active img {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+aside .tabs {
+  height: calc(100vh - 50px);
+}
+
+@media (max-width: 991px) {
+  aside {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    top: unset;
+    right: 0;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  aside .footer-tab, aside .logo {
+    display: none;
+  }
+  aside .tabs {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: row-reverse;
+            flex-flow: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: initial;
+  }
+  aside .tabs .tab-item,
+  aside .tabs .search {
+    margin-bottom: 0;
+    margin: 0 .5rem;
+  }
+  aside .tabs .tab-item {
+    width: 40px;
+    height: 40px;
+  }
+  aside .tabs .inner-tabs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+  }
+}
+
+main {
+  margin-left: 52px;
+}
+
+@media (max-width: 991px) {
+  main {
+    margin-left: 0;
+  }
+}
+
+/* Container */
+/*  Column first  */
+#firstcolumn {
+  text-align: left;
+}
+
+#firstcolumn .header {
+  margin-left: 37px;
+  margin-top: 10px;
+}
+
+#firstcolumn .profile {
+  width: 50px;
+  height: 50px;
+}
+
+#firstcolumn .detail {
+  margin-left: 30px;
+}
+
+#firstcolumn .name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#firstcolumn .greet {
+  font-size: 15px;
+}
+
+.info {
+  background-color: #6051f0;
+  color: #ffffff;
+  margin-left: 60px;
+  border-radius: 10px;
+}
+
+#firstcolumn .datatransaction h4 {
+  font-size: 15px;
+  color: #555;
+}
+
+#firstcolumn .datatransaction small {
+  color: #111;
+  font-weight: bold;
+}
+
+#firstcolumn .datatransaction hr {
+  width: 20rem;
+  margin-right: 20rem;
+  border-top-style: solid;
+  border-width: 2px;
+}
+
+/*  second Column */
+#secondcolumn .productdetail .productname {
+  font-size: 15px;
+  color: #6051f0;
+}
+
+#secondcolumn .mygoals hr {
+  width: 20rem;
+  border-color: #6051f0;
+  margin-right: 1.5rem;
+  border-top-style: solid;
+  border-width: 2px;
+}
+
+#secondcolumn .mygoals h3 {
+  font-weight: bold;
+}
+
+#secondcolumn .contributions span {
+  margin: 8px;
+}
+
+#secondcolumn .descrpi .peers {
+  color: #555;
+}
+
+#secondcolumn table .information {
+  margin-right: 55px;
+  margin-left: -40px;
+}
+
+#secondcolumn table select {
+  border: none;
+}
+
+#secondcolumn .box {
+  width: 25%;
+  float: left;
+  margin: 30px auto;
+}
+
+#secondcolumn .chart {
+  position: relative;
+  width: 110px;
+  height: 110px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 20px;
+  line-height: 110px;
+}
+
+#secondcolumn canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.slidecontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  color: #6051f0;
+}
+
+.slidecontainer input {
+  color: #6051f0;
+  background-color: #6051f0;
+}
+
+.update {
+  color: #fff;
+  background-color: #6051f0;
+}
+
+.helplink {
+  position: relative;
+  left: 110px;
+}
+
+/* ########## Display color group ######### */
+.container-fluid #firstcolumn {
+  background-color: #F9F9F9;
+}
+
+.container-fluid #secondcolumn {
+  background-color: #fff;
+  margin-top: 20px;
+}
+
+.container-fluid #thirdcolumn {
+  background-color: #F9F9F9;
+  height: 500px;
+  margin-top: 30px;
+}
+/*# sourceMappingURL=styles.css.map */
